@@ -7,6 +7,9 @@ body {
     rgb(215, 248, 247) 93.8%
   );
   min-height: 100vh;
+
+  font-family: raleway, sans-serif;
+  line-height: 1.5;
 }
 
 .container {

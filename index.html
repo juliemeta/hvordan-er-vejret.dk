@@ -6,14 +6,84 @@
     <title>Hvordan er vejret</title>
   </head>
   <body>
-    <h1>Hello!</h1>
+    <header>
+      <form>
+        <input type="search" placeholder="Please enter a city..." required />
+        <input type="submit" value="Search" />
+      </form>
+    </header>
+    <main>
+      <div>
+        <h1>City</h1>
+        <p>
+          <span id="current-weekday">Wednesday</span>
+          <span id="time-stamp">12:44</span>,
+          <span id="weather-short-description">sunny</span>
+          <br />
+          Humidity:
+          <span class="current-weather-specs"
+            ><span id="humidity">62</span>%</span
+          >, Wind:
+          <span class="current-weather-specs"
+            ><span id="wind">2,68</span>km/h</span
+          >
+        </p>
+      </div>
+      <div>
+        <span id="current-weather-emoji">☀</span>
+        <span id="current-temperature">12</span><span>°C</span>
+      </div>
+
+      <ul>
+        <li>
+          <div class="forecast-weekdays" id="day-one">Thu</div>
+          <div class="forecast-weather-emojis">🌤</div>
+          <div>
+            <span class="forecast-temperature day">18°</span>
+            <span class="forecast-temperature night"></span>
+          </div>
+        </li>
+        <li>
+          <div class="forecast-weekdays" id="day-two">Fri</div>
+          <div class="forecast-weather-emojis">🌤</div>
+          <div>
+            <span class="forecast-temperature day">18°</span>
+            <span class="forecast-temperature night"></span>
+          </div>
+        </li>
+        <li>
+          <div class="forecast-weekdays" id="day-three">Sat</div>
+          <div class="forecast-weather-emojis">🌤</div>
+          <div>
+            <span class="forecast-temperature day">18°</span>
+            <span class="forecast-temperature night"></span>
+          </div>
+        </li>
+        <li>
+          <div class="forecast-weekdays" id="day-four">Sun</div>
+          <div class="forecast-weather-emojis">🌤</div>
+          <div>
+            <span class="forecast-temperature day">18°</span>
+            <span class="forecast-temperature night"></span>
+          </div>
+        </li>
+        <li>
+          <div class="forecast-weekdays" id="day-five">Mon</div>
+          <div class="forecast-weather-emojis">🌤</div>
+          <div>
+            <span class="forecast-temperature day">18°</span>
+            <span class="forecast-temperature night"></span>
+          </div>
+        </li>
+      </ul>
+    </main>
     <footer>
       Coded by
       <a href="https://github.com/juliemeta/" target="_blank"
         >Julie M. Jeffries</a
-      >
+      >.
       <br />
-      Public on
+      Open-sourced on
       <a
         href="https://github.com/juliemeta/hvordan-er-vejret.dk"
         target="_blank"

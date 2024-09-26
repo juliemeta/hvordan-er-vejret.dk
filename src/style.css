@@ -18,7 +18,7 @@ footer {
 #logo {
   max-width: 65px;
   border-radius: 180px;
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
   display: flex;
 }
 
@@ -29,6 +29,20 @@ footer {
   box-shadow: 0 30px 50px #41326414;
   margin: 50px auto;
   padding: 25px 50px;
+}
+
+.divider {
+  border: none;
+  background-color: rgba(255, 200, 124, 0.3);
+  height: 1px;
+  max-width: 80%;
+}
+header .divider {
+  margin: 20px auto 35px;
+}
+
+footer .divider {
+  margin-top: 45px;
 }
 
 .city-search-form {

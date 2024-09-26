@@ -5,7 +5,6 @@ body {
     rgb(252, 251, 121) 90%
   );
   min-height: 100vh;
-
   font-family: raleway, sans-serif;
   line-height: 1.5;
 }
@@ -85,6 +84,14 @@ footer .divider {
   justify-content: space-between;
 }
 
+.current-city {
+  font-family: kanit, sans-serif;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
 .current-weather-specs,
 .forecast-temperature {
   color: rgb(255, 150, 2);
@@ -94,4 +101,31 @@ footer .divider {
 }
 .night {
   font-weight: 300;
+}
+
+.current-temperature-container {
+  font-family: kanit, sans-serif;
+}
+.current-weather-emoji {
+  font-size: 44px;
+  position: relative;
+  top: -30px;
+}
+.current-temperature {
+  font-size: 88px;
+  font-weight: 600;
+}
+.current-temperature-unit {
+  position: relative;
+  top: -30px;
+}
+
+ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
 }

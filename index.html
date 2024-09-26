@@ -21,9 +21,15 @@
   <body>
     <div class="container">
       <header>
-        <form>
-          <input type="search" placeholder="Please enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="city-search-form">
+          <input
+            type="search"
+            placeholder="Please enter a city..."
+            class="city-search-input"
+            required
+            autofocus
+          />
+          <input type="submit" value="Search" class="city-search-button" />
         </form>
       </header>
       <main>
@@ -45,7 +51,8 @@
         </div>
         <div>
           <span id="current-weather-emoji">☀</span>
-          <span id="current-temperature">12</span><span>°C</span>
+          <span id="current-temperature">12</span
+          ><span class="current-temperature-unit">°C</span>
         </div>
 
         <ul>

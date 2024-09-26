@@ -17,9 +17,44 @@ footer {
 
 .container {
   max-width: 600px;
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 8px;
   box-shadow: 0 30px 50px #41326414;
   margin: 80px auto;
   padding: 25px;
+}
+
+.city-search-form {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.city-search-input {
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 200, 124, 0.3);
+  color: blueviolet;
+  margin-right: 5px;
+  padding: 12px 20px;
+}
+.city-search-input:placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.city-search-button {
+  width: 20%;
+  border: none;
+  border-radius: 4px;
+  background: rgb(255, 200, 124);
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+  padding: 12px 20px;
+}
+.city-search-button:hover {
+  background: rgba(255, 200, 124, 0.95);
+  color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
 }

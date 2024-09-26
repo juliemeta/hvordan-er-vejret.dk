@@ -24,7 +24,7 @@ footer {
 
 .container {
   max-width: 600px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   box-shadow: 0 30px 50px #41326414;
   margin: 50px auto;
@@ -78,4 +78,20 @@ footer .divider {
   background: rgba(255, 200, 124, 0.95);
   color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
+}
+
+.current-weather-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-weather-specs,
+.forecast-temperature {
+  color: rgb(255, 150, 2);
+}
+.day {
+  font-weight: bold;
+}
+.night {
+  font-weight: 300;
 }

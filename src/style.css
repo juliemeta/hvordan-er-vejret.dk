@@ -107,15 +107,16 @@ footer .divider {
   font-family: kanit, sans-serif;
 }
 .current-weather-emoji {
-  font-size: 44px;
+  font-size: 54px;
   position: relative;
-  top: -30px;
+  top: -10px;
 }
 .current-temperature {
   font-size: 88px;
   font-weight: 600;
 }
 .current-temperature-unit {
+  font-size: 42px;
   position: relative;
   top: -30px;
 }

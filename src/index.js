@@ -13,7 +13,7 @@ function updateCurrentWeather(response) {
 
   cityElement.innerHTML = response.data.city;
   weekdayELement.innerHTML = formatWeekday(date);
-  timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
+  timeElement.innerHTML = formatTime(date);
   shortDescriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed} km/h`;
@@ -34,6 +34,19 @@ function formatWeekday(date) {
   let weekday = days[date.getDay()];
 
   return `${weekday}`;
+}
+
+function formatTime(date) {
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  let time = `${hours}:${minutes}`;
+
+  return `${time}`;
 }
 
 function searchCity(city) {

@@ -1,5 +1,6 @@
 function updateCurrentWeather(response) {
   let cityElement = document.querySelector("#current-city");
+  let weekdayELement = document.querySelector("#current-weekday");
   let timeElement = document.querySelector("#time-stamp");
   let date = new Date(response.data.time * 1000);
   let shortDescriptionElement = document.querySelector(
@@ -11,11 +12,28 @@ function updateCurrentWeather(response) {
   let temperature = response.data.temperature.current;
 
   cityElement.innerHTML = response.data.city;
+  weekdayELement.innerHTML = formatWeekday(date);
   timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
   shortDescriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed} km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
+}
+
+function formatWeekday(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let weekday = days[date.getDay()];
+
+  return `${weekday}`;
 }
 
 function searchCity(city) {

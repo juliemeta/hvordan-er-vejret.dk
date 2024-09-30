@@ -1,6 +1,7 @@
 function updateCurrentWeather(response) {
   let cityElement = document.querySelector("#current-city");
-  //time stamp
+  let timeElement = document.querySelector("#time-stamp");
+  let date = new Date(response.data.time * 1000);
   let shortDescriptionElement = document.querySelector(
     "#weather-short-description"
   );
@@ -10,6 +11,7 @@ function updateCurrentWeather(response) {
   let temperature = response.data.temperature.current;
 
   cityElement.innerHTML = response.data.city;
+  timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
   shortDescriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed} km/h`;

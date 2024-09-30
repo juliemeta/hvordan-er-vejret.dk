@@ -23,3 +23,5 @@ function handleCitySearch(event) {
 
 let SearchFormElement = document.querySelector("#city-search-form");
 SearchFormElement.addEventListener("submit", handleCitySearch);
+
+searchCity("Odense");

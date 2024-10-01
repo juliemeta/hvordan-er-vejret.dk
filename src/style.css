@@ -9,6 +9,10 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: rgb(173, 1, 1);
+}
+
 footer {
   font-size: smaller;
   text-align: center;
@@ -17,7 +21,7 @@ footer {
 #logo {
   max-width: 65px;
   border-radius: 180px;
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
   display: flex;
 }
 
@@ -55,7 +59,7 @@ footer .divider {
   border: none;
   border-radius: 4px;
   background: rgba(255, 200, 124, 0.3);
-  color: blueviolet;
+  color: rgb(0, 0, 0);
   margin-right: 5px;
   padding: 12px 20px;
 }
@@ -127,7 +131,7 @@ footer .divider {
 ul {
   display: flex;
   margin: 0 auto;
-  padding: 0;
+  padding: 35px 0;
   justify-content: space-around;
 }
 li {

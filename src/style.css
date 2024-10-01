@@ -91,9 +91,16 @@ footer .divider {
 .current-city {
   font-family: kanit, sans-serif;
   font-size: 38px;
-  line-height: 48px;
+  line-height: 38px;
   font-weight: 800;
   margin: 0;
+}
+
+.current-country {
+  font-family: kanit, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 0;
 }
 
 .current-weather-specs,
@@ -109,6 +116,7 @@ footer .divider {
 
 .current-temperature-container {
   font-family: kanit, sans-serif;
+  padding-top: 20px;
 }
 .current-weather-icon {
   width: 88px;

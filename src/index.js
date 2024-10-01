@@ -1,5 +1,6 @@
 function updateCurrentWeather(response) {
   let cityElement = document.querySelector("#current-city");
+  let countryELement = document.querySelector("#current-country");
   let weekdayELement = document.querySelector("#current-weekday");
   let timeElement = document.querySelector("#time-stamp");
   let date = new Date(response.data.time * 1000);
@@ -13,6 +14,7 @@ function updateCurrentWeather(response) {
   let temperature = response.data.temperature.current;
 
   cityElement.innerHTML = response.data.city;
+  countryELement.innerHTML = response.data.country;
   weekdayELement.innerHTML = formatWeekday(date);
   timeElement.innerHTML = formatTime(date);
   shortDescriptionElement.innerHTML = response.data.condition.description;

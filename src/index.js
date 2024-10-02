@@ -28,6 +28,8 @@ function updateCurrentWeather(response) {
     />
   `;
   temperatureElement.innerHTML = Math.round(temperature);
+
+  getForecast(response.data.city);
 }
 
 function formatWeekday(date) {
@@ -73,7 +75,15 @@ function handleCitySearch(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "c2t7ea4432f52e0o6d402fd54c5bc269";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
   let forecastHtml = "";
 
@@ -100,4 +110,3 @@ let SearchFormElement = document.querySelector("#city-search-form");
 SearchFormElement.addEventListener("submit", handleCitySearch);
 
 searchCity("Odense");
-displayForecast();

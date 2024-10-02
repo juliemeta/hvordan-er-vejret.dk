@@ -73,7 +73,31 @@ function handleCitySearch(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+          <div class="forecast-day">
+            <div class="forecast-weekdays" id="day-one">${day}</div>
+            <div class="forecast-weather-emojis">🌤</div>
+            <div>
+              <span class="forecast-temperature day">18°</span>
+              <span class="forecast-temperature night">7°</span>
+            </div>
+          </div>
+`;
+  });
+
+  let forecastElement = document.querySelector("#forecast-section");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let SearchFormElement = document.querySelector("#city-search-form");
 SearchFormElement.addEventListener("submit", handleCitySearch);
 
 searchCity("Odense");
+displayForecast();

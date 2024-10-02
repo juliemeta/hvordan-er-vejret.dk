@@ -136,12 +136,7 @@ footer .divider {
   top: -30px;
 }
 
-ul {
+.forecast-section {
   display: flex;
-  margin: 0 auto;
-  padding: 35px 0;
   justify-content: space-around;
-}
-li {
-  list-style-type: none;
 }

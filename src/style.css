@@ -140,3 +140,8 @@ footer .divider {
   display: flex;
   justify-content: space-around;
 }
+
+.forecast-weather-icons {
+  width: 50px;
+  text-align: center;
+}
